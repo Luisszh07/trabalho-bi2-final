@@ -1,0 +1,61 @@
+table DIM_Porte_Populacional
+	lineageTag: dd52726c-b0d4-4f50-b41d-02da009c9fe9
+
+	column SK_Porte
+		dataType: int64
+		formatString: 0
+		lineageTag: 08e8ea1a-0c82-428e-904b-507be2b3d8ec
+		summarizeBy: none
+		sourceColumn: SK_Porte
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa_Porte
+		dataType: string
+		lineageTag: 81c1040e-9585-4865-a7c4-d17b851ece3d
+		summarizeBy: none
+		sourceColumn: Faixa_Porte
+
+		annotation SummarizationSetBy = Automatic
+
+	column Limite_Inferior
+		dataType: int64
+		formatString: 0
+		lineageTag: 61a5f8c0-fe49-4762-a05f-41360cb53041
+		summarizeBy: none
+		sourceColumn: Limite_Inferior
+
+		annotation SummarizationSetBy = Automatic
+
+	column Limite_Superior
+		dataType: int64
+		formatString: 0
+		lineageTag: 590098b7-564d-4b35-8ce4-0826ec895333
+		summarizeBy: none
+		sourceColumn: Limite_Superior
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_Porte_Populacional = m
+		mode: import
+		source =
+				let
+				    Origem = #table(
+				        {"Faixa_Porte", "Limite_Inferior", "Limite_Superior"},
+				        {
+				            {"Muito Pequena", 0, 5000},
+				            {"Pequena", 5001, 20000},
+				            {"Médio", 20001, 100000},
+				            {"Grande", 100001, 999999999}
+				        }
+				    ),
+				    Adicionada_SK = Table.AddIndexColumn(Origem, "SK_Porte", 1, 1, Int64.Type),
+				    Reordenada = Table.ReorderColumns(Adicionada_SK, {"SK_Porte", "Faixa_Porte", "Limite_Inferior", "Limite_Superior"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Reordenada,{{"Faixa_Porte", type text}, {"Limite_Inferior", Int64.Type}, {"Limite_Superior", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

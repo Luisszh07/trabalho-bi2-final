@@ -1,0 +1,147 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "42744fad2137acdc48a7",
+  "position": {
+    "x": 698.18181818181813,
+    "y": 158.18181818181816,
+    "z": 11,
+    "height": 216.36363636363635,
+    "width": 473.63636363636363,
+    "tabOrder": 11
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_estado"
+                    }
+                  },
+                  "Property": "região"
+                }
+              },
+              "queryRef": "DIM_estado.região",
+              "nativeQueryRef": "região",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabela_Consultas"
+                    }
+                  },
+                  "Property": "Gasto Per Capita Medio"
+                }
+              },
+              "queryRef": "Tabela_Consultas.Gasto Per Capita Medio",
+              "nativeQueryRef": "Gasto Per Capita Medio",
+              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tabela_Consultas"
+                  }
+                },
+                "Property": "Gasto Per Capita Medio"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Gasto Per Capita Médio por Região'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EEF2F7'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "52989bbf43930b6a0982",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_estado"
+              }
+            },
+            "Property": "região"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e84d34ad320140320001",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Tabela_Consultas"
+              }
+            },
+            "Property": "Gasto Per Capita Medio"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

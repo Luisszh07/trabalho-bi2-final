@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 96,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 465.3718807637091,
+            "y": 633.3318013329183
+          },
+          "nodeIndex": "DIM_calendario",
+          "nodeLineageTag": "4914b196-5df1-44d3-aed4-3abbc5941931",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 903.371880763709,
+            "y": 250.66360266583649
+          },
+          "nodeIndex": "DIM_estado",
+          "nodeLineageTag": "45348e77-4240-4502-9ab9-9b3990e2b7a2",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 482.95328520317423,
+            "y": 0
+          },
+          "nodeIndex": "DIM_Faixa_IDH",
+          "nodeLineageTag": "a85f47a4-9079-4189-b720-9f3607f7e3e4",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 23,
+            "y": 281.87584714621579
+          },
+          "nodeIndex": "DIM_Porte_Populacional",
+          "nodeLineageTag": "dd52726c-b0d4-4f50-b41d-02da009c9fe9",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 478.20413330133204,
+            "y": 286.21276718336071
+          },
+          "nodeIndex": "Fato_Municipio",
+          "nodeLineageTag": "b80167fc-15fe-4450-b4fb-2190d2ebff87",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1164.371880763709,
+            "y": 352.66590066645915
+          },
+          "nodeIndex": "Tabela_Consultas",
+          "nodeLineageTag": "da7f8abe-6279-462d-9d51-ef33cb4acd08",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

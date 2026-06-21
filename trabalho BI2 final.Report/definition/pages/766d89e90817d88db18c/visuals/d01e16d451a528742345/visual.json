@@ -1,0 +1,146 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "d01e16d451a528742345",
+  "position": {
+    "x": 668.18181818181813,
+    "y": 209.99999999999997,
+    "z": 6,
+    "height": 275.45454545454544,
+    "width": 522.72727272727263,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_Faixa_IDH"
+                    }
+                  },
+                  "Property": "Faixa_IDH"
+                }
+              },
+              "queryRef": "DIM_Faixa_IDH.Faixa_IDH",
+              "nativeQueryRef": "Faixa_IDH",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabela_Consultas"
+                    }
+                  },
+                  "Property": "Total Municipios"
+                }
+              },
+              "queryRef": "Tabela_Consultas.Total Municipios",
+              "nativeQueryRef": "Total Municipios"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tabela_Consultas"
+                  }
+                },
+                "Property": "Total Municipios"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EEF2F7'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Distribuição dos Municípios por Faixa de IDH'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a351832fb64d0eb9e042",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Faixa_IDH"
+              }
+            },
+            "Property": "Faixa_IDH"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1f28451ac2b6a20c2948",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Tabela_Consultas"
+              }
+            },
+            "Property": "Total Municipios"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

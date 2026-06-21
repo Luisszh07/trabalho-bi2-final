@@ -1,0 +1,93 @@
+table DIM_estado
+	lineageTag: 45348e77-4240-4502-9ab9-9b3990e2b7a2
+
+	column Estado
+		dataType: string
+		lineageTag: c0f8104b-e659-491e-adc9-c8880d51f85d
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column região
+		dataType: string
+		lineageTag: 7df98dd9-d742-4afd-a0c0-027edd49734d
+		summarizeBy: none
+		sourceColumn: região
+
+		annotation SummarizationSetBy = Automatic
+
+	column SK_Estado
+		dataType: int64
+		formatString: 0
+		lineageTag: b7b112d8-23fc-4abc-9b92-b3fee471a272
+		summarizeBy: none
+		sourceColumn: SK_Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nome_Estado
+		dataType: string
+		lineageTag: aa02efbb-a713-4658-9506-a0fb08c5a13b
+		summarizeBy: none
+		sourceColumn: Nome_Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_estado = m
+		mode: import
+		source =
+				let
+				    Fonte = Fato_Municipio,
+				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"Estado", "região"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas", {"Estado"}),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "Índice", 0, 1, Int64.Type),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Índice Adicionado",{"Índice"}),
+				    #"Índice Adicionado1" = Table.AddIndexColumn(#"Colunas Removidas", "Índice", 1, 1, Int64.Type),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado1",{{"Índice", "SK_Estado"}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Colunas Renomeadas", "Nome_Estado", each if [Estado] = "AC" then "Acre"
+				else if [Estado] = "AL" then "Alagoas"
+				else if [Estado] = "AP" then "Amapá"
+				else if [Estado] = "AM" then "Amazonas"
+				else if [Estado] = "BA" then "Bahia"
+				else if [Estado] = "CE" then "Ceará"
+				else if [Estado] = "DF" then "Distrito Federal"
+				else if [Estado] = "ES" then "Espírito Santo"
+				else if [Estado] = "GO" then "Goiás"
+				else if [Estado] = "MA" then "Maranhão"
+				else if [Estado] = "MT" then "Mato Grosso"
+				else if [Estado] = "MS" then "Mato Grosso do Sul"
+				else if [Estado] = "MG" then "Minas Gerais"
+				else if [Estado] = "PA" then "Pará"
+				else if [Estado] = "PB" then "Paraíba"
+				else if [Estado] = "PR" then "Paraná"
+				else if [Estado] = "PE" then "Pernambuco"
+				else if [Estado] = "PI" then "Piauí"
+				else if [Estado] = "RJ" then "Rio de Janeiro"
+				else if [Estado] = "RN" then "Rio Grande do Norte"
+				else if [Estado] = "RS" then "Rio Grande do Sul"
+				else if [Estado] = "RO" then "Rondônia"
+				else if [Estado] = "RR" then "Roraima"
+				else if [Estado] = "SC" then "Santa Catarina"
+				else if [Estado] = "SP" then "São Paulo"
+				else if [Estado] = "SE" then "Sergipe"
+				else if [Estado] = "TO" then "Tocantins"
+				else null),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Personalização Adicionada","Goiás","Goias",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído","Amapá","Amapa",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído2" = Table.ReplaceValue(#"Valor Substituído1","Espírito Santo","Espirito Santo",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído3" = Table.ReplaceValue(#"Valor Substituído2","Paraná","Parana",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído4" = Table.ReplaceValue(#"Valor Substituído3","São Paulo","Sao Paulo",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído5" = Table.ReplaceValue(#"Valor Substituído4","Rondônia","Rondonia",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído6" = Table.ReplaceValue(#"Valor Substituído5","Paraíba","Paraiba",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído7" = Table.ReplaceValue(#"Valor Substituído6","Piauí","Piaui",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído8" = Table.ReplaceValue(#"Valor Substituído7","Ceará","Ceara",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído9" = Table.ReplaceValue(#"Valor Substituído8","Pará","Para",Replacer.ReplaceText,{"Nome_Estado"}),
+				    #"Valor Substituído10" = Table.ReplaceValue(#"Valor Substituído9","Maranhão","Maranhao",Replacer.ReplaceText,{"Nome_Estado"})
+				in
+				    #"Valor Substituído10"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c66fb686b720c2a568b0",
+  "position": {
+    "x": 9.09090909090909,
+    "y": 151.81818181818181,
+    "z": 1,
+    "height": 150.90909090909091,
+    "width": 171.81818181818181,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_Porte_Populacional"
+                    }
+                  },
+                  "Property": "Faixa_Porte"
+                }
+              },
+              "queryRef": "DIM_Porte_Populacional.Faixa_Porte",
+              "nativeQueryRef": "Faixa_Porte",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EEF2F7'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8aaa2390bb169d0b76ca",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Porte_Populacional"
+              }
+            },
+            "Property": "Faixa_Porte"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

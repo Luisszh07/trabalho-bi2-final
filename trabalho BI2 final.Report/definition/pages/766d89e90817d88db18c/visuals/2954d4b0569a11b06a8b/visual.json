@@ -1,0 +1,220 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "2954d4b0569a11b06a8b",
+  "position": {
+    "x": 362.72727272727269,
+    "y": 485.45454545454544,
+    "z": 7,
+    "height": 234.54545454545453,
+    "width": 590.90909090909088,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fato_Municipio"
+                    }
+                  },
+                  "Property": "Municipio"
+                }
+              },
+              "queryRef": "Fato_Municipio.Municipio",
+              "nativeQueryRef": "Municipio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fato_Municipio"
+                    }
+                  },
+                  "Property": "IDHM"
+                }
+              },
+              "queryRef": "Sum(Fato_Municipio.IDHM)",
+              "nativeQueryRef": "IDHM",
+              "format": "0.000"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fato_Municipio"
+                    }
+                  },
+                  "Property": "Gasto_Per_Capita"
+                }
+              },
+              "queryRef": "Sum(Fato_Municipio.Gasto_Per_Capita)",
+              "nativeQueryRef": "Gasto_Per_Capita",
+              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fato_Municipio"
+                    }
+                  },
+                  "Property": "Arrecadacao_Per_Capita"
+                }
+              },
+              "queryRef": "Sum(Fato_Municipio.Arrecadacao_Per_Capita)",
+              "nativeQueryRef": "Arrecadacao_Per_Capita",
+              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fato_Municipio"
+                    }
+                  },
+                  "Property": "PIB_Per_Capita"
+                }
+              },
+              "queryRef": "Sum(Fato_Municipio.PIB_Per_Capita)",
+              "nativeQueryRef": "PIB_Per_Capita",
+              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fato_Municipio"
+                  }
+                },
+                "Property": "PIB_Per_Capita"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Auto'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "113.81818253878608D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Fato_Municipio.Gasto_Per_Capita)"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "94a682e014d00ed366d3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fato_Municipio"
+              }
+            },
+            "Property": "Municipio"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cde11ed2ed6c4d101117",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fato_Municipio"
+              }
+            },
+            "Property": "IDHM"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c96d13b2aa573017925e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fato_Municipio"
+              }
+            },
+            "Property": "Gasto_Per_Capita"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e2bf7162b370b2c00c1c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fato_Municipio"
+              }
+            },
+            "Property": "Arrecadacao_Per_Capita"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "db5f836519067ce0b80e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fato_Municipio"
+              }
+            },
+            "Property": "PIB_Per_Capita"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+role 'Diretor Nacional'
+	modelPermission: read
+
+	tablePermission Fato_Municipio
+
+	annotation PBI_Id = 62c60a684db24782b7f7bc89230b9cbc
+

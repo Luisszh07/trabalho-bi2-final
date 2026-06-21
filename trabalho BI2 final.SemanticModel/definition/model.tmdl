@@ -1,0 +1,31 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Fato_Municipio","DIM_estado","DIM_Porte_Populacional","DIM_Faixa_IDH","DIM_calendario","Tabela_Consultas"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Fato_Municipio
+ref table DIM_estado
+ref table DIM_Porte_Populacional
+ref table DIM_Faixa_IDH
+ref table DIM_calendario
+ref table Tabela_Consultas
+
+ref role 'Gestor Regional Nordeste'
+ref role 'Gestor Regional Centro-Oeste'
+ref role 'Gestor Regional Sudeste'
+ref role 'Gestor Regional Sul'
+ref role 'Gestor Regional Norte'
+ref role 'Analista de Desenvolvimento'
+ref role 'Diretor Nacional'
+
+ref cultureInfo pt-BR
+

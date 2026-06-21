@@ -1,0 +1,56 @@
+table DIM_calendario
+	lineageTag: 4914b196-5df1-44d3-aed4-3abbc5941931
+
+	column SK_Calendario
+		dataType: int64
+		formatString: 0
+		lineageTag: 392f71ec-ec97-4f22-a130-bc6ec29b50ba
+		summarizeBy: sum
+		sourceColumn: SK_Calendario
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		dataType: int64
+		formatString: 0
+		lineageTag: c15969c8-7220-4b83-9012-f08b5f47cc3d
+		summarizeBy: sum
+		sourceColumn: Ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column Descricao
+		dataType: string
+		lineageTag: 0a6607f2-5e67-4da4-b807-db665a350260
+		summarizeBy: none
+		sourceColumn: Descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fonte
+		dataType: string
+		lineageTag: 168615d9-72e5-4ed6-9738-0f0de23f9d31
+		summarizeBy: none
+		sourceColumn: Fonte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_calendario = m
+		mode: import
+		source =
+				let
+				    Origem = Table.FromList(
+				        {2010},
+				        each {_, "Censo IBGE", "IBGE / FINBRA / IPEA"},
+				        {"Ano", "Descricao", "Fonte"}
+				    ),
+				    Adicionada_SK = Table.AddIndexColumn(Origem, "SK_Calendario", 1, 1, Int64.Type),
+				    Reordenada = Table.ReorderColumns(Adicionada_SK, {"SK_Calendario", "Ano", "Descricao", "Fonte"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Reordenada,{{"Ano", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

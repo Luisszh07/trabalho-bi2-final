@@ -1,0 +1,3123 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "fato_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fato municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Fato_Municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "municipio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.populacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Populacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "populacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.idhm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "IDHM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "idhm": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.gasto_publico_VA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Gasto_Publico_VA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto publico VA": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Gasto_Publico_VA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.VA_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "VA_Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "VA total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VA_Total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "va aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "va overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.arrecadacao_propria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Arrecadacao_Propria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arrecadacao propria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Arrecadacao_Propria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.PIB_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "PIB_Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB_Total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pib aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pib overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.gasto_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Gasto_Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Gasto_Total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "gasto aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "gasto overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.região": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "região"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "região": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.gasto_per_capita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Gasto_Per_Capita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto per capita": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Gasto_Per_Capita": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.arrecadacao_per_capita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Arrecadacao_Per_Capita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arrecadacao per capita": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Arrecadacao_Per_Capita": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Arrecadação Per Capita": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.PIB_per_capita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "PIB_Per_Capita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB per capita": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PIB_Per_Capita": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.prop_gastos_publico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Prop_Gastos_Publicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop gastos publico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop gasto publico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Prop_Gastos_Publicos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.faixa_IDH": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Faixa_IDH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "faixa IDH": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faixa_IDH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.faixa_porte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "Faixa_Porte"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "faixa porte": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faixa_Porte": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_municipio.SK_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fato_Municipio",
+			          "ConceptualProperty": "SK_Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SK calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SK_Calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM estado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIM_estado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_estado.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_estado",
+			          "ConceptualProperty": "Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_estado.região": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_estado",
+			          "ConceptualProperty": "região"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "região": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_estado.SK_estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_estado",
+			          "ConceptualProperty": "SK_Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SK estado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SK_Estado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_estado.nome_estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_estado",
+			          "ConceptualProperty": "Nome_Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome estado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nome_Estado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Estado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Porte_Populacional"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM porte populacional": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIM_Porte_Populacional": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional.SK_porte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Porte_Populacional",
+			          "ConceptualProperty": "SK_Porte"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SK porte": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SK_Porte": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "porte": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional.faixa_porte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Porte_Populacional",
+			          "ConceptualProperty": "Faixa_Porte"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faixa porte": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faixa_Porte": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional.limite_inferior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Porte_Populacional",
+			          "ConceptualProperty": "Limite_Inferior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite inferior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Limite_Inferior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "limite minion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "limite underling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "limite vassal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional.limite_superior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Porte_Populacional",
+			          "ConceptualProperty": "Limite_Superior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite superior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Limite_Superior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Faixa_IDH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM faixa IDH": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIM_Faixa_IDH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH.sk_idh": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Faixa_IDH",
+			          "ConceptualProperty": "SK_IDH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sk idh": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SK_IDH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH.faixa_IDH": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Faixa_IDH",
+			          "ConceptualProperty": "Faixa_IDH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faixa IDH": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faixa_IDH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH.limite_inferior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Faixa_IDH",
+			          "ConceptualProperty": "Limite_Inferior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite inferior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Limite_Inferior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "limite minion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "limite underling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "limite vassal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH.limite_superior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Faixa_IDH",
+			          "ConceptualProperty": "Limite_Superior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite superior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Limite_Superior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIM_calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendario.SK_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_calendario",
+			          "ConceptualProperty": "SK_Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SK calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SK_Calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_calendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendario.descricao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_calendario",
+			          "ConceptualProperty": "Descricao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descricao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendario.fonte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_calendario",
+			          "ConceptualProperty": "Fonte"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fonte": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabela consulta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tabela_Consultas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.coluna_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Coluna1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "coluna 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Coluna1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.total_municipios": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Total Municipios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total municipios": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Municípios": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.gasto_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Gasto Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gasto aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "gasto overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.IDH_medio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "IDH Medio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IDH medio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.PIB_per_capita_medio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "PIB Per Capita Medio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PIB per capita medio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.arrecadacao_per_capita_media": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Arrecadacao Per Capita Media"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arrecadacao per capita media": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.gasto_per_capita_medio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Gasto Per Capita Medio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto per capita medio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.pct_municipios_abaixo_media_gasto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Pct Municipios Abaixo Media Gasto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pct municipios abaixo media gasto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.variacao_IDH_vs_media": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Variacao IDH vs Media"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variacao IDH vs media": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variacao idh vs television": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variacao idh vs radio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variacao idh vs broadcasting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variacao idh vs vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variacao idh vs mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variacao idh vs method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variacao idh vs avenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variacao idh vs agent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variacao idh vs organ": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variacao idh vs mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.gasto_per_capita_IDH_baixo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Gasto Per Capita IDH Baixo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto per capita IDH baixo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.municipios_IDH_critico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Municipios IDH Critico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "municipios IDH critico": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.pct_gasto_servicos_publicos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Pct Gasto Servicos Publicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pct gasto servicos publicos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabela_consulta.ranking_gasto_estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabela_Consultas",
+			          "ConceptualProperty": "Ranking Gasto Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking gasto estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fato_municipio_has_tabela_consulta_pct_municipios_abaixo_media_gasto": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.pct_municipios_abaixo_media_gasto": {
+			          "Target": {
+			            "Entity": "tabela_consulta.pct_municipios_abaixo_media_gasto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.pct_municipios_abaixo_media_gasto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_pct_municipios_abaixo_media_gasto"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_gasto_per_capita_medio": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.gasto_per_capita_medio": {
+			          "Target": {
+			            "Entity": "tabela_consulta.gasto_per_capita_medio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.gasto_per_capita_medio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_gasto_per_capita_medio"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_arrecadacao_per_capita_media": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.arrecadacao_per_capita_media": {
+			          "Target": {
+			            "Entity": "tabela_consulta.arrecadacao_per_capita_media"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.arrecadacao_per_capita_media"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_arrecadacao_per_capita_media"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_PIB_per_capita_medio": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.PIB_per_capita_medio": {
+			          "Target": {
+			            "Entity": "tabela_consulta.PIB_per_capita_medio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.PIB_per_capita_medio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_PIB_per_capita_medio"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_IDH_medio": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.IDH_medio": {
+			          "Target": {
+			            "Entity": "tabela_consulta.IDH_medio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.IDH_medio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_IDH_medio"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_gasto_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.gasto_total": {
+			          "Target": {
+			            "Entity": "tabela_consulta.gasto_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.gasto_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_gasto_total"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_total_municipios": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.total_municipios": {
+			          "Target": {
+			            "Entity": "tabela_consulta.total_municipios"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.total_municipios"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_total_municipios"
+			        }
+			      ]
+			    },
+			    "DIM_calendario_has_fonte": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendario": {
+			          "Target": {
+			            "Entity": "DIM_calendario"
+			          }
+			        },
+			        "DIM_calendario.fonte": {
+			          "Target": {
+			            "Entity": "DIM_calendario.fonte"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendario"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendario.fonte"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendarios_have_fontes"
+			        }
+			      ]
+			    },
+			    "DIM_calendario_has_descricao": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendario": {
+			          "Target": {
+			            "Entity": "DIM_calendario"
+			          }
+			        },
+			        "DIM_calendario.descricao": {
+			          "Target": {
+			            "Entity": "DIM_calendario.descricao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendario"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendario.descricao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendarios_have_descricaos"
+			        }
+			      ]
+			    },
+			    "DIM_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendario": {
+			          "Target": {
+			            "Entity": "DIM_calendario"
+			          }
+			        },
+			        "DIM_calendario.ano": {
+			          "Target": {
+			            "Entity": "DIM_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendario"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "DIM_calendario_has_SK_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendario": {
+			          "Target": {
+			            "Entity": "DIM_calendario"
+			          }
+			        },
+			        "DIM_calendario.SK_calendario": {
+			          "Target": {
+			            "Entity": "DIM_calendario.SK_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendario"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendario.SK_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendarios_have_SK_calendarios"
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH_has_limite_superior": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Faixa_IDH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_faixa_IDH": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH"
+			          }
+			        },
+			        "DIM_faixa_IDH.limite_superior": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH.limite_superior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_faixa_IDH"
+			            },
+			            "Object": {
+			              "Role": "DIM_faixa_IDH.limite_superior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_faixa_IDHs_have_limite_superiors"
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH_has_limite_inferior": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Faixa_IDH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_faixa_IDH": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH"
+			          }
+			        },
+			        "DIM_faixa_IDH.limite_inferior": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH.limite_inferior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_faixa_IDH"
+			            },
+			            "Object": {
+			              "Role": "DIM_faixa_IDH.limite_inferior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_faixa_IDHs_have_limite_inferiors"
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH_has_faixa_IDH": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Faixa_IDH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_faixa_IDH": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH"
+			          }
+			        },
+			        "DIM_faixa_IDH.faixa_IDH": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH.faixa_IDH"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_faixa_IDH"
+			            },
+			            "Object": {
+			              "Role": "DIM_faixa_IDH.faixa_IDH"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_faixa_IDHs_have_faixa_IDHs"
+			        }
+			      ]
+			    },
+			    "DIM_faixa_IDH_has_sk_idh": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Faixa_IDH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_faixa_IDH": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH"
+			          }
+			        },
+			        "DIM_faixa_IDH.sk_idh": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH.sk_idh"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_faixa_IDH"
+			            },
+			            "Object": {
+			              "Role": "DIM_faixa_IDH.sk_idh"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_faixa_IDHs_have_sk_idhs"
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional_has_limite_superior": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Porte_Populacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_porte_populacional": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional"
+			          }
+			        },
+			        "DIM_porte_populacional.limite_superior": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional.limite_superior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_porte_populacional"
+			            },
+			            "Object": {
+			              "Role": "DIM_porte_populacional.limite_superior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_porte_populacionals_have_limite_superiors"
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional_has_limite_inferior": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Porte_Populacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_porte_populacional": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional"
+			          }
+			        },
+			        "DIM_porte_populacional.limite_inferior": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional.limite_inferior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_porte_populacional"
+			            },
+			            "Object": {
+			              "Role": "DIM_porte_populacional.limite_inferior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_porte_populacionals_have_limite_inferiors"
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional_has_faixa_porte": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Porte_Populacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_porte_populacional": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional"
+			          }
+			        },
+			        "DIM_porte_populacional.faixa_porte": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional.faixa_porte"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_porte_populacional"
+			            },
+			            "Object": {
+			              "Role": "DIM_porte_populacional.faixa_porte"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_porte_populacionals_have_faixa_porte"
+			        }
+			      ]
+			    },
+			    "DIM_porte_populacional_has_SK_porte": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Porte_Populacional"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_porte_populacional": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional"
+			          }
+			        },
+			        "DIM_porte_populacional.SK_porte": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional.SK_porte"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_porte_populacional"
+			            },
+			            "Object": {
+			              "Role": "DIM_porte_populacional.SK_porte"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_porte_populacionals_have_SK_porte"
+			        }
+			      ]
+			    },
+			    "DIM_estado_has_nome_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_estado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado"
+			          }
+			        },
+			        "DIM_estado.nome_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado.nome_estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_estado"
+			            },
+			            "Object": {
+			              "Role": "DIM_estado.nome_estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_estado_have_nome_estado"
+			        }
+			      ]
+			    },
+			    "DIM_estado_has_SK_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_estado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado"
+			          }
+			        },
+			        "DIM_estado.SK_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado.SK_estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_estado"
+			            },
+			            "Object": {
+			              "Role": "DIM_estado.SK_estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_estado_have_SK_estado"
+			        }
+			      ]
+			    },
+			    "DIM_estado_has_região": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_estado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado"
+			          }
+			        },
+			        "DIM_estado.região": {
+			          "Target": {
+			            "Entity": "DIM_estado.região"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_estado"
+			            },
+			            "Object": {
+			              "Role": "DIM_estado.região"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_estado_have_regiãos"
+			        }
+			      ]
+			    },
+			    "DIM_estado_has_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_estado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado"
+			          }
+			        },
+			        "DIM_estado.estado": {
+			          "Target": {
+			            "Entity": "DIM_estado.estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_estado"
+			            },
+			            "Object": {
+			              "Role": "DIM_estado.estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_estado_have_estado"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_SK_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.SK_calendario": {
+			          "Target": {
+			            "Entity": "fato_municipio.SK_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.SK_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_SK_calendarios"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_prop_gastos_publico": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.prop_gastos_publico": {
+			          "Target": {
+			            "Entity": "fato_municipio.prop_gastos_publico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.prop_gastos_publico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_prop_gastos_publicos"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_PIB_per_capita": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.PIB_per_capita": {
+			          "Target": {
+			            "Entity": "fato_municipio.PIB_per_capita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.PIB_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_PIB_per_capita"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.PIB_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PIB_per_capita_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_arrecadacao_per_capita": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.arrecadacao_per_capita": {
+			          "Target": {
+			            "Entity": "fato_municipio.arrecadacao_per_capita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.arrecadacao_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_arrecadacao_per_capita"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.arrecadacao_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "arrecadacao_per_capita_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_gasto_per_capita": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.gasto_per_capita": {
+			          "Target": {
+			            "Entity": "fato_municipio.gasto_per_capita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.gasto_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_gasto_per_capita"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.gasto_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gasto_per_capita_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_região": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.região": {
+			          "Target": {
+			            "Entity": "fato_municipio.região"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.região"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_regiãos"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_gasto_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.gasto_total": {
+			          "Target": {
+			            "Entity": "fato_municipio.gasto_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.gasto_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_gasto_totals"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.gasto_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gasto_total_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_PIB_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.PIB_total": {
+			          "Target": {
+			            "Entity": "fato_municipio.PIB_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.PIB_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_PIB_totals"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.PIB_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PIB_total_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_arrecadacao_propria": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.arrecadacao_propria": {
+			          "Target": {
+			            "Entity": "fato_municipio.arrecadacao_propria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.arrecadacao_propria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_arrecadacao_proprias"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.arrecadacao_propria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "arrecadacao_propria_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_VA_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.VA_total": {
+			          "Target": {
+			            "Entity": "fato_municipio.VA_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.VA_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_VA_totals"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.VA_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "VA_total_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_gasto_publico_VA": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.gasto_publico_VA": {
+			          "Target": {
+			            "Entity": "fato_municipio.gasto_publico_VA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.gasto_publico_VA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_gasto_publico_VA"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fato_municipio.gasto_publico_VA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gasto_publico_VA_indicates_how_expensive_fato_municipios_are"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_idhm": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.idhm": {
+			          "Target": {
+			            "Entity": "fato_municipio.idhm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.idhm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_idhms"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_populacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.populacao": {
+			          "Target": {
+			            "Entity": "fato_municipio.populacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.populacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_populacaos"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "fato_municipio.municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio.municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio.municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_municipios"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_variacao_IDH_vs_media": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.variacao_IDH_vs_media": {
+			          "Target": {
+			            "Entity": "tabela_consulta.variacao_IDH_vs_media"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.variacao_IDH_vs_media"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_variacao_IDH_vs_media"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_gasto_per_capita_IDH_baixo": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.gasto_per_capita_IDH_baixo": {
+			          "Target": {
+			            "Entity": "tabela_consulta.gasto_per_capita_IDH_baixo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.gasto_per_capita_IDH_baixo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_gasto_per_capita_IDH_baixo"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_municipios_IDH_critico": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.municipios_IDH_critico": {
+			          "Target": {
+			            "Entity": "tabela_consulta.municipios_IDH_critico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.municipios_IDH_critico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_municipios_IDH_critico"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_pct_gasto_servicos_publicos": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.pct_gasto_servicos_publicos": {
+			          "Target": {
+			            "Entity": "tabela_consulta.pct_gasto_servicos_publicos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.pct_gasto_servicos_publicos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_pct_gasto_servicos_publicos"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_tabela_consulta_ranking_gasto_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "tabela_consulta.ranking_gasto_estado": {
+			          "Target": {
+			            "Entity": "tabela_consulta.ranking_gasto_estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "tabela_consulta.ranking_gasto_estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_ranking_gasto_estado"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_DIM_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "DIM_estado": {
+			          "Target": {
+			            "Entity": "DIM_estado"
+			          },
+			          "Nouns": [
+			            {
+			              "estado": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "DIM_estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_DIM_estado"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_estado"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_estado_have_fato_municipios"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_DIM_faixa_IDH": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "DIM_faixa_IDH": {
+			          "Target": {
+			            "Entity": "DIM_faixa_IDH"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "DIM_faixa_IDH"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_DIM_faixa_IDHs"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_faixa_IDH"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_faixa_IDHs_have_fato_municipios"
+			        }
+			      ]
+			    },
+			    "fato_municipio_has_DIM_porte_populacional": {
+			      "Binding": {
+			        "ConceptualEntity": "Fato_Municipio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_municipio": {
+			          "Target": {
+			            "Entity": "fato_municipio"
+			          }
+			        },
+			        "DIM_porte_populacional": {
+			          "Target": {
+			            "Entity": "DIM_porte_populacional"
+			          },
+			          "Nouns": [
+			            {
+			              "faixa porte": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_municipio"
+			            },
+			            "Object": {
+			              "Role": "DIM_porte_populacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_municipios_have_DIM_porte_populacionals"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_porte_populacional"
+			            },
+			            "Object": {
+			              "Role": "fato_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_porte_populacionals_have_fato_municipios"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

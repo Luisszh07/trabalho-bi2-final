@@ -1,0 +1,206 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f4f42c22484a8854de94",
+  "position": {
+    "x": 263.07277628032347,
+    "y": 414.01617250673854,
+    "z": 12,
+    "height": 298.43665768194069,
+    "width": 884.95956873315356,
+    "tabOrder": 12
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_estado"
+                    }
+                  },
+                  "Property": "região"
+                }
+              },
+              "queryRef": "DIM_estado.região",
+              "nativeQueryRef": "região"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Fato_Municipio"
+                        }
+                      },
+                      "Property": "Municipio"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "Min(Fato_Municipio.Municipio)",
+              "nativeQueryRef": "Municipios",
+              "displayName": "Municipios"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Fato_Municipio"
+                        }
+                      },
+                      "Property": "Estado"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "Min(Fato_Municipio.Estado)",
+              "nativeQueryRef": "Estados",
+              "displayName": "Estados"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabela_Consultas"
+                    }
+                  },
+                  "Property": "Gasto Per Capita Medio"
+                }
+              },
+              "queryRef": "Tabela_Consultas.Gasto Per Capita Medio",
+              "nativeQueryRef": "Gasto Per Capita Medio",
+              "active": true,
+              "format": "\"R$\" #,0.00;-\"R$\" #,0.00;\"R$\" #,0.00"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabela_Consultas"
+                    }
+                  },
+                  "Property": "IDH Medio"
+                }
+              },
+              "queryRef": "Tabela_Consultas.IDH Medio",
+              "nativeQueryRef": "IDH Medio",
+              "format": "0.000"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Distribuição Municipal: IDH × Gasto Per Capita'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EEF2F7'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5e2fc055ab97e3b575b0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Tabela_Consultas"
+              }
+            },
+            "Property": "Gasto Per Capita Medio"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8071db4f2568bc5a92dc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Tabela_Consultas"
+              }
+            },
+            "Property": "IDH Medio"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "43ae2b806902b3d27816",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_estado"
+              }
+            },
+            "Property": "região"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

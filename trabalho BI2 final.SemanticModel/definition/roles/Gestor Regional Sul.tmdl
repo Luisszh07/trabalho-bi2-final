@@ -1,0 +1,7 @@
+role 'Gestor Regional Sul'
+	modelPermission: read
+
+	tablePermission DIM_estado = [região] == "Sul"
+
+	annotation PBI_Id = 43929769222844628e423d8b937547b5
+

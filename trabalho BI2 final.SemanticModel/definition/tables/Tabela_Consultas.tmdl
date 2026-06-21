@@ -1,0 +1,110 @@
+table Tabela_Consultas
+	lineageTag: da7f8abe-6279-462d-9d51-ef33cb4acd08
+
+	measure 'Total Municipios' = COUNTROWS( Fato_Municipio )
+		formatString: 0
+		lineageTag: 368adc12-4965-4fe1-94ba-9b6c9b539acd
+
+	measure 'Gasto Total' = SUM( Fato_Municipio[Gasto_Total] )
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 635623cb-ba6d-4989-9636-98979dfd68ba
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'IDH Medio' = AVERAGE( Fato_Municipio[IDHM] )
+		lineageTag: f0267b30-d551-48d0-a8a5-c4ae6797d97c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'PIB Per Capita Medio' = AVERAGE( Fato_Municipio[PIB_Per_Capita] )
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 60b7680e-eb04-481f-9a15-37353f85a38c
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Arrecadacao Per Capita Media' = AVERAGE( Fato_Municipio[Arrecadacao_Per_Capita] )
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: ab2da331-6625-4323-85bd-fbfbadadf097
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Gasto Per Capita Medio' = AVERAGE( Fato_Municipio[Gasto_Per_Capita] )
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 2401a72c-2f7b-4c53-8e03-0bd12d4695fd
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Pct Municipios Abaixo Media Gasto' =
+			
+			VAR MediaGasto = CALCULATE( AVERAGE( Fato_Municipio[Gasto_Per_Capita] ), ALL( Fato_Municipio ) )
+			VAR MunicipiosAbaixo = COUNTROWS( FILTER( Fato_Municipio, Fato_Municipio[Gasto_Per_Capita] < MediaGasto ) )
+			RETURN DIVIDE( MunicipiosAbaixo, [Total Municipios], 0 )
+		lineageTag: 9f4bdda9-6e09-4e4e-b93c-74a36abbcab2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Variacao IDH vs Media' =
+			
+			VAR MediaNacional = CALCULATE( AVERAGE( Fato_Municipio[IDHM] ), ALL( Fato_Municipio ) )
+			RETURN [IDH Medio] - MediaNacional
+		lineageTag: 181a12b5-20e9-425f-891c-b92393da6460
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Gasto Per Capita IDH Baixo' =
+			
+			CALCULATE(
+			    AVERAGE( Fato_Municipio[Gasto_Per_Capita] ),
+			    Dim_Faixa_IDH[Faixa_IDH] IN { "Muito Baixo", "Baixo" }
+			)
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 132d3bef-0712-4963-a83e-330539e07aed
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Municipios IDH Critico' =
+			
+			CALCULATE( [Total Municipios], Fato_Municipio[IDHM] < 0.6 )
+		formatString: 0
+		lineageTag: 5831703f-b600-4dfa-86a4-01e304faf541
+
+	measure 'Pct Gasto Servicos Publicos' =
+			
+			DIVIDE(
+			    SUM( Fato_Municipio[Gasto_Publico_VA] ),
+			    SUM( Fato_Municipio[VA_Total] ),
+			    0
+			)
+		lineageTag: 268be9de-10e4-410f-bae6-e4da592b52ec
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ranking Gasto Estado' =
+			
+			RANKX( ALL( Dim_Estado[Estado] ), [Gasto Per Capita Medio], , DESC )
+		formatString: 0
+		lineageTag: e97fb061-922d-4029-a9c9-8fb46d10cee6
+
+	column Coluna1
+		dataType: string
+		isHidden
+		lineageTag: 9e7e3919-bbc8-4147-b527-59bff81591f4
+		summarizeBy: none
+		sourceColumn: Coluna1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabela_Consultas = m
+		mode: import
+		source =
+				let
+				    Origem = #table({"Coluna1"}, {})
+				in
+				    Origem
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

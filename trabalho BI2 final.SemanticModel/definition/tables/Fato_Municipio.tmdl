@@ -1,0 +1,307 @@
+table Fato_Municipio
+	lineageTag: b80167fc-15fe-4450-b4fb-2190d2ebff87
+
+	column Municipio
+		dataType: string
+		lineageTag: a77e6353-5156-4c39-9db6-18325f69b640
+		summarizeBy: none
+		sourceColumn: Municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 8396d53e-c976-41ba-81be-340490092d30
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Populacao
+		dataType: int64
+		formatString: 0
+		lineageTag: ef450ee2-7416-4cab-a5c8-8af0ab5fdc12
+		summarizeBy: sum
+		sourceColumn: Populacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column IDHM
+		dataType: double
+		lineageTag: 1135029b-4e46-4edf-ab2c-693416f0f354
+		summarizeBy: sum
+		sourceColumn: IDHM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gasto_Publico_VA
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 3f605952-e832-4ee3-8178-b05fed6103e6
+		summarizeBy: sum
+		sourceColumn: Gasto_Publico_VA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column VA_Total
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 684251b8-1e06-4387-9592-3bb2305c9df8
+		summarizeBy: sum
+		sourceColumn: VA_Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Arrecadacao_Propria
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: eec1c33d-e65c-4724-8c0e-d67262cc8dfb
+		summarizeBy: sum
+		sourceColumn: Arrecadacao_Propria
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PIB_Total
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: b2d30b88-15e1-4c29-82ca-440f17947328
+		summarizeBy: sum
+		sourceColumn: PIB_Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Gasto_Total
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: cda26ec8-c6d5-4818-8156-6025c18fbbaf
+		summarizeBy: sum
+		sourceColumn: Gasto_Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column região
+		dataType: string
+		lineageTag: 0eb6cc5e-c2e7-4b69-a7eb-b9bc037f334d
+		summarizeBy: none
+		sourceColumn: região
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gasto_Per_Capita
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 95ded3de-03a4-4b4e-9dd5-f27370371473
+		summarizeBy: sum
+		sourceColumn: Gasto_Per_Capita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Arrecadacao_Per_Capita
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 8e8d326e-37cf-403e-805f-9317f6a9b7a6
+		summarizeBy: sum
+		sourceColumn: Arrecadacao_Per_Capita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PIB_Per_Capita
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: e1ddb1ca-1aa1-4d95-b5ce-6538e8cf0bc7
+		summarizeBy: sum
+		sourceColumn: PIB_Per_Capita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Prop_Gastos_Publicos
+		dataType: double
+		lineageTag: 4266896f-79d0-422b-87d5-c7d7fcabf470
+		summarizeBy: sum
+		sourceColumn: Prop_Gastos_Publicos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Faixa_IDH
+		dataType: string
+		lineageTag: bbb9dd03-8bc5-43f6-935b-16cd37ef6400
+		summarizeBy: none
+		sourceColumn: Faixa_IDH
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa_Porte
+		dataType: string
+		lineageTag: ce55be8e-c51c-4f12-b1fc-e05c2052f6c8
+		summarizeBy: none
+		sourceColumn: Faixa_Porte
+
+		annotation SummarizationSetBy = Automatic
+
+	column SK_Calendario
+		dataType: string
+		lineageTag: b569cca8-0da6-4103-8169-2dcda10e2441
+		summarizeBy: none
+		sourceColumn: SK_Calendario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fato_Municipio = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Luís\Desktop\BRAZIL_CITIES.csv"),[Delimiter=";", Columns=81, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Cabeçalhos Promovidos", each ([IDHM] <> null)),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"COMP_TOT", Currency.Type}, {"IBGE_RES_POP", Int64.Type}, {"TAXES", Currency.Type}, {"GDP", Currency.Type}}),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Tipo Alterado1", {{"GDP", Currency.Type}}, "pt-BR"),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado com Localidade",{{"CITY", "Municipio"}, {"STATE", "Estado"}, {"IBGE_RES_POP", "População"}, {"TAXES", "Arrecadação_Propia"}, {"GDP", "PIB_total"}}),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"COMP_TOT", Int64.Type}, {"MUN_EXPENDIT", Currency.Type}}),
+				    #"Linhas Filtradas1" = Table.SelectRows(#"Tipo Alterado2", each ([MUN_EXPENDIT] <> null)),
+				    #"Tipo Alterado3" = Table.TransformColumnTypes(#"Linhas Filtradas1",{{"MUN_EXPENDIT", Currency.Type}}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Tipo Alterado3",{{"MUN_EXPENDIT", "Gasto_Total"}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Colunas Renomeadas1", "Regiao", each if List.Contains({"AC","AP","AM","PA","RO","RR","TO"}, [STATE]) then "Norte"
+				else if List.Contains({"AL","BA","CE","MA","PB","PE","PI","RN","SE"}, [STATE]) then "Nordeste"
+				else if List.Contains({"DF","GO","MT","MS"}, [STATE]) then "Centro-Oeste"
+				else if List.Contains({"ES","MG","RJ","SP"}, [STATE]) then "Sudeste"
+				else if List.Contains({"PR","RS","SC"}, [STATE]) then "Sul"
+				else null),
+				    #"Tipo Alterado4" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"Regiao", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado4",{"Regiao"}),
+				    #"Personalização Adicionada1" = Table.AddColumn(#"Colunas Removidas", "região", each if List.Contains({"AC","AP","AM","PA","RO","RR","TO"}, [Estado]) then "Norte"
+				else if List.Contains({"AL","BA","CE","MA","PB","PE","PI","RN","SE"}, [Estado]) then "Nordeste"
+				else if List.Contains({"DF","GO","MT","MS"}, [Estado]) then "Centro-Oeste"
+				else if List.Contains({"ES","MG","RJ","SP"}, [Estado]) then "Sudeste"
+				else if List.Contains({"PR","RS","SC"}, [Estado]) then "Sul"
+				else null),
+				    #"Personalização Adicionada2" = Table.AddColumn(#"Personalização Adicionada1", "Gasto_Per_Capita", each [Gasto_Total] / [Populacao]),
+				    #"Tipo Alterado5" = Table.TransformColumnTypes(#"Personalização Adicionada2",{{"Gasto_Per_Capita", Currency.Type}}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Tipo Alterado5",{"Gasto_Per_Capita"}),
+				    #"Colunas Renomeadas2" = Table.RenameColumns(#"Colunas Removidas1",{{"População", "Populacao"}}),
+				    #"Personalização Adicionada3" = Table.AddColumn(#"Colunas Renomeadas2", "Gasto_Per_Capita", each [Gasto_Total] / [Populacao]),
+				    #"Tipo Alterado6" = Table.TransformColumnTypes(#"Personalização Adicionada3",{{"Gasto_Per_Capita", Currency.Type}}),
+				    #"Personalização Adicionada4" = Table.AddColumn(#"Tipo Alterado6", "Arrecadacao_Per_Capita", each [Arrecadacao_Propria] / [Populacao]),
+				    #"Colunas Removidas2" = Table.RemoveColumns(#"Personalização Adicionada4",{"Arrecadacao_Per_Capita"}),
+				    #"Colunas Renomeadas3" = Table.RenameColumns(#"Colunas Removidas2",{{"Arrecadação_Propia", "Arrecadacao_Propia"}}),
+				    #"Personalização Adicionada5" = Table.AddColumn(#"Colunas Renomeadas3", "Arrecadacao_Per_Capita", each [Arrecadacao_Propria] / [Populacao]),
+				    #"Colunas Removidas3" = Table.RemoveColumns(#"Personalização Adicionada5",{"Arrecadacao_Per_Capita"}),
+				    #"Colunas Renomeadas4" = Table.RenameColumns(#"Colunas Removidas3",{{"Arrecadacao_Propia", "Arrecadacao_Propria"}}),
+				    #"Personalização Adicionada6" = Table.AddColumn(#"Colunas Renomeadas4", "Arrecadacao_Per_Capita", each [Arrecadacao_Propria] / [Populacao]),
+				    #"Tipo Alterado7" = Table.TransformColumnTypes(#"Personalização Adicionada6",{{"Arrecadacao_Per_Capita", Currency.Type}}),
+				    #"Personalização Adicionada7" = Table.AddColumn(#"Tipo Alterado7", "Arrecadacao_Per_Capita.1", each ([Arrecadacao_Propria] * 1000) / [Populacao]),
+				    #"Tipo Alterado8" = Table.TransformColumnTypes(#"Personalização Adicionada7",{{"Arrecadacao_Per_Capita", Currency.Type}}),
+				    #"Colunas Removidas4" = Table.RemoveColumns(#"Tipo Alterado8",{"Arrecadacao_Per_Capita"}),
+				    #"Personalização Adicionada8" = Table.AddColumn(#"Colunas Removidas4", "Arrecadacao_Per_Capita", each ([Arrecadacao_Propria] * 1000) / [Populacao]),
+				    #"Tipo Alterado9" = Table.TransformColumnTypes(#"Personalização Adicionada8",{{"Arrecadacao_Per_Capita", Currency.Type}, {"Arrecadacao_Per_Capita.1", Currency.Type}}),
+				    #"Colunas Removidas5" = Table.RemoveColumns(#"Tipo Alterado9",{"Arrecadacao_Per_Capita.1"}),
+				    #"Personalização Adicionada9" = Table.AddColumn(#"Colunas Removidas5", "PIB_Per_Capita", each [PIB_Total] / [Populacao]),
+				    #"Colunas Removidas6" = Table.RemoveColumns(#"Personalização Adicionada9",{"PIB_Per_Capita"}),
+				    #"Colunas Renomeadas5" = Table.RenameColumns(#"Colunas Removidas6",{{"PIB_total", "PIB_Total"}}),
+				    #"Personalização Adicionada10" = Table.AddColumn(#"Colunas Renomeadas5", "PIB_Per_Capita", each [PIB_Total] / [Populacao]),
+				    #"Tipo Alterado10" = Table.TransformColumnTypes(#"Personalização Adicionada10",{{"PIB_Per_Capita", Currency.Type}}),
+				    #"Colunas Removidas7" = Table.RemoveColumns(#"Tipo Alterado10",{"PIB_Per_Capita"}),
+				    #"Personalização Adicionada11" = Table.AddColumn(#"Colunas Removidas7", "PIB_Per_Capita", each ([PIB_Total] * 1000) / [Populacao]),
+				    #"Tipo Alterado11" = Table.TransformColumnTypes(#"Personalização Adicionada11",{{"PIB_Per_Capita", Currency.Type}}),
+				    #"Colunas Removidas8" = Table.RemoveColumns(#"Tipo Alterado11",{"PIB_Per_Capita"}),
+				    #"Tipo Alterado12" = Table.TransformColumnTypes(#"Colunas Removidas8",{{"GDP_CAPITA", Currency.Type}}),
+				    #"Tipo Alterado com Localidade1" = Table.TransformColumnTypes(#"Tipo Alterado12", {{"GDP_CAPITA", Currency.Type}}, "en-US"),
+				    #"Tipo Alterado13" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade1",{{"GDP_CAPITA", Currency.Type}}),
+				    #"Tipo Alterado com Localidade2" = Table.TransformColumnTypes(#"Tipo Alterado13", {{"GDP_CAPITA", Currency.Type}}, "en-US"),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade2",{{"GDP_CAPITA", type text}}),
+				    #"Personalização Adicionada12" = Table.AddColumn(#"Tipo Alterado", "PIB_Per_Capita", each Number.FromText([GDP_CAPITA], "en-US")),
+				    #"Tipo Alterado14" = Table.TransformColumnTypes(#"Personalização Adicionada12",{{"PIB_Per_Capita", Currency.Type}}),
+				    #"Colunas Removidas9" = Table.RemoveColumns(#"Tipo Alterado14",{"PIB_Per_Capita"}),
+				    #"Personalização Adicionada13" = Table.AddColumn(#"Colunas Removidas9", "PIB_Per_Capita", each [GDP_CAPITA] / 100),
+				    #"Colunas Removidas10" = Table.RemoveColumns(#"Personalização Adicionada13",{"PIB_Per_Capita"}),
+				    #"Tipo Alterado15" = Table.TransformColumnTypes(#"Colunas Removidas10",{{"GDP_CAPITA", Currency.Type}}),
+				    #"Personalização Adicionada14" = Table.AddColumn(#"Tipo Alterado15", "PIB_Per_Capita", each [GDP_CAPITA] / 100),
+				    #"Tipo Alterado16" = Table.TransformColumnTypes(#"Personalização Adicionada14",{{"PIB_Per_Capita", Currency.Type}}),
+				    #"Colunas Removidas11" = Table.RemoveColumns(#"Tipo Alterado16",{"GDP_CAPITA"}),
+				    #"Duplicatas Removidas1" = Table.Distinct(#"Colunas Removidas11", {"Gasto_Total"}),
+				    #"Colunas Renomeadas6" = Table.RenameColumns(#"Duplicatas Removidas1",{{" GVA_TOTAL ", "VA_Total"}, {"GVA_PUBLIC", "Gasto_Publico_VA"}}),
+				    #"Personalização Adicionada15" = Table.AddColumn(#"Colunas Renomeadas6", "Prop_Gasto_Public", each ([Gasto_Publico_VA] / [VA_Total]) * 100),
+				    #"Colunas Renomeadas7" = Table.RenameColumns(#"Personalização Adicionada15",{{"Prop_Gasto_Public", "Prop_Gasto_Publico"}}),
+				    #"Colunas Removidas12" = Table.RemoveColumns(#"Colunas Renomeadas7",{"Prop_Gasto_Publico"}),
+				    #"Personalização Adicionada16" = Table.AddColumn(#"Colunas Removidas12", "Prop_Gastos_Publico", each [Gasto_Publico_VA] / [VA_Total]),
+				    #"Tipo Alterado17" = Table.TransformColumnTypes(#"Personalização Adicionada16",{{"Prop_Gastos_Publico", Percentage.Type}}),
+				    #"Colunas Removidas13" = Table.RemoveColumns(#"Tipo Alterado17",{"Prop_Gastos_Publico"}),
+				    #"Tipo Alterado18" = Table.TransformColumnTypes(#"Colunas Removidas13",{{"Gasto_Publico_VA", Currency.Type}, {"VA_Total", Currency.Type}}),
+				    #"Personalização Adicionada17" = Table.AddColumn(#"Tipo Alterado18", "Prop_Gastos_Publicos", each ([Gasto_Publico_VA] / [VA_Total]) * 100),
+				    #"Tipo Alterado19" = Table.TransformColumnTypes(#"Personalização Adicionada17",{{"Prop_Gastos_Publicos", Percentage.Type}}),
+				    #"Colunas Removidas14" = Table.RemoveColumns(#"Tipo Alterado19",{"Prop_Gastos_Publicos"}),
+				    #"Personalização Adicionada18" = Table.AddColumn(#"Colunas Removidas14", "Prop_Gastos_Publicos", each [Gasto_Publico_VA] / [VA_Total] / 10),
+				    #"Tipo Alterado22" = Table.TransformColumnTypes(#"Personalização Adicionada18",{{"Prop_Gastos_Publicos", Percentage.Type}}),
+				    #"Tipo Alterado21" = Table.TransformColumnTypes(#"Tipo Alterado22",{{"Prop_Gastos_Publicos", Percentage.Type}}),
+				    #"Linhas Filtradas2" = Table.SelectRows(#"Tipo Alterado21", each [Prop_Gastos_Publicos] <= 1),
+				    #"Personalização Adicionada19" = Table.AddColumn(#"Linhas Filtradas2", "Personalizar", each if [IDHM] < 0.5 then "Muito Baixo"
+				else if [IDHM] < 0.6 then "Baixo"
+				else if [IDHM] < 0.7 then "Médio"
+				else if [IDHM] < 0.8 then "Alto"
+				else "Muito Alto"),
+				    #"Tipo Alterado23" = Table.TransformColumnTypes(#"Personalização Adicionada19",{{"Personalizar", type text}}),
+				    #"Colunas Removidas15" = Table.RemoveColumns(#"Tipo Alterado23",{"Personalizar"}),
+				    #"Personalização Adicionada20" = Table.AddColumn(#"Colunas Removidas15", "Faixa_IDH", each if [IDHM] < 0.5 then "Muito Baixo"
+				else if [IDHM] < 0.6 then "Baixo"
+				else if [IDHM] < 0.7 then "Médio"
+				else if [IDHM] < 0.8 then "Alto"
+				else "Muito Alto"),
+				    #"Colunas Removidas16" = Table.RemoveColumns(#"Personalização Adicionada20",{"Faixa_IDH"}),
+				    #"Personalização Adicionada21" = Table.AddColumn(#"Colunas Removidas16", "Personalizar", each if [Populacao] <= 5000 then "Pequeno I"
+				else if [Populacao] <= 20000 then "Pequeno II"
+				else if [Populacao] <= 100000 then "Médio"
+				else "Grande"),
+				    #"Linhas Filtradas3" = Table.SelectRows(#"Personalização Adicionada21", each true),
+				    #"Personalização Adicionada22" = Table.AddColumn(#"Linhas Filtradas3", "Personalizar.1", each if [IDHM] < 0.5 then "Muito Baixo"
+				else if [IDHM] < 0.6 then "Baixo"
+				else if [IDHM] < 0.7 then "Médio"
+				else if [IDHM] < 0.8 then "Alto"
+				else "Muito Alto"),
+				    #"Colunas Removidas17" = Table.RemoveColumns(#"Personalização Adicionada22",{"Personalizar.1", "Personalizar"}),
+				    #"Tipo Alterado24" = Table.TransformColumnTypes(#"Colunas Removidas17",{{"IDHM", Int64.Type}}),
+				    #"Tipo Alterado20" = Table.TransformColumnTypes(#"Tipo Alterado24",{{"Prop_Gastos_Publicos", Percentage.Type}}),
+				    #"Prefixo Adicionado" = Table.TransformColumns(#"Tipo Alterado20", {{"IDHM", each "0," & Text.From(_, "pt-BR"), type text}}),
+				    #"Tipo Alterado25" = Table.TransformColumnTypes(#"Prefixo Adicionado",{{"IDHM", type number}}),
+				    #"Personalização Adicionada23" = Table.AddColumn(#"Tipo Alterado25", "Faixa_IDH", each if [IDHM] < 0.5 then "Muito Baixo"
+				else if [IDHM] < 0.6 then "Baixo"
+				else if [IDHM] < 0.7 then "Médio"
+				else if [IDHM] < 0.8 then "Alto"
+				else "Muito Alto"),
+				    #"Personalização Adicionada24" = Table.AddColumn(#"Personalização Adicionada23", "Personalizar", each if [Populacao] <= 5000 then "Muito Pequena"
+				else if [Populacao] <= 20000 then "Pequena"
+				else if [Populacao] <= 100000 then "Médio"
+				else "Grande"),
+				    #"Tipo Alterado26" = Table.TransformColumnTypes(#"Personalização Adicionada24",{{"Faixa_IDH", type text}, {"Personalizar", type text}}),
+				    #"Colunas Renomeadas8" = Table.RenameColumns(#"Tipo Alterado26",{{"Personalizar", "Faixa_Porte"}}),
+				    #"Linhas Filtradas4" = Table.SelectRows(#"Colunas Renomeadas8", each true),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Linhas Filtradas4",{"Municipio", "Estado", "Populacao", "IDHM", "Gasto_Publico_VA", "VA_Total", "Arrecadacao_Propria", "PIB_Total", "Gasto_Total", "região", "Gasto_Per_Capita", "Arrecadacao_Per_Capita", "PIB_Per_Capita", "Prop_Gastos_Publicos", "Faixa_IDH", "Faixa_Porte"}),
+				    #"Erros Removidos" = Table.RemoveRowsWithErrors(#"Outras Colunas Removidas", {"Faixa_IDH"}),
+				    #"Linhas Filtradas5" = Table.SelectRows(#"Erros Removidos", each true),
+				    #"Personalização Adicionada25" = Table.AddColumn(#"Linhas Filtradas5", "SK_calendario", each 1),
+				    #"Colunas Renomeadas9" = Table.RenameColumns(#"Personalização Adicionada25",{{"SK_calendario", "SK_Calendario"}})
+				in
+				    #"Colunas Renomeadas9"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

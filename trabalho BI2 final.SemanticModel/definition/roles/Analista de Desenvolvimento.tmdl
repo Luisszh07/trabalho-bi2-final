@@ -1,0 +1,7 @@
+role 'Analista de Desenvolvimento'
+	modelPermission: read
+
+	tablePermission Fato_Municipio = [IDHM] < 0.6
+
+	annotation PBI_Id = 486a0e5b006648ef82f017711694ddb4
+

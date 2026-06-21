@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "trabalho BI2 final"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "62d860d0-cce3-4c26-8f6d-33aa2a5b8bb3"
+  }
+}

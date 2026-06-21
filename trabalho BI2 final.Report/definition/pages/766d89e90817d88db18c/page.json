@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "766d89e90817d88db18c",
+  "displayName": "Drill-Down Estado",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EEF2F7'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EEF2F7'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "6b44c306899bd955449d",
+      "target": "c66fb686b720c2a568b0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "6b44c306899bd955449d",
+      "target": "dc03b68350d3d411102d",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4d104eea40152612b10a",
+      "target": "c66fb686b720c2a568b0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c66fb686b720c2a568b0",
+      "target": "4d104eea40152612b10a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4d104eea40152612b10a",
+      "target": "6b44c306899bd955449d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6b44c306899bd955449d",
+      "target": "d01e16d451a528742345",
+      "type": "HighlightFilter"
+    }
+  ]
+}

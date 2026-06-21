@@ -1,0 +1,64 @@
+table DIM_Faixa_IDH
+	lineageTag: a85f47a4-9079-4189-b720-9f3607f7e3e4
+
+	column SK_IDH
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d32fedb-1be9-4e1e-ab02-76a139121cf1
+		summarizeBy: none
+		sourceColumn: SK_IDH
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa_IDH
+		dataType: string
+		lineageTag: 0e172275-8b5b-4824-b57c-6897a6a7828e
+		summarizeBy: none
+		sourceColumn: Faixa_IDH
+
+		annotation SummarizationSetBy = Automatic
+
+	column Limite_Inferior
+		dataType: double
+		lineageTag: dbf0e2eb-d279-47e5-a8cf-02d8259454af
+		summarizeBy: none
+		sourceColumn: Limite_Inferior
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Limite_Superior
+		dataType: double
+		lineageTag: eb6aafa2-9a60-4879-8c1a-d7031fd9b1c2
+		summarizeBy: none
+		sourceColumn: Limite_Superior
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition DIM_Faixa_IDH = m
+		mode: import
+		source =
+				let
+				    Origem = #table(
+				        {"Faixa_IDH", "Limite_Inferior", "Limite_Superior"},
+				        {
+				            {"Muito Baixo", 0, 0.499},
+				            {"Baixo", 0.5, 0.599},
+				            {"Médio", 0.6, 0.699},
+				            {"Alto", 0.7, 0.799},
+				            {"Muito Alto", 0.8, 1}
+				        }
+				    ),
+				    Adicionada_SK = Table.AddIndexColumn(Origem, "SK_IDH", 1, 1, Int64.Type),
+				    Reordenada = Table.ReorderColumns(Adicionada_SK, {"SK_IDH", "Faixa_IDH", "Limite_Inferior", "Limite_Superior"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Reordenada,{{"Faixa_IDH", type text}, {"Limite_Inferior", type number}, {"Limite_Superior", type number}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

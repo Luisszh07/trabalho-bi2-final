@@ -1,0 +1,12 @@
+relationship AutoDetected_acc72d1b-334a-4c30-a5f2-d652f6fcdc5e
+	fromColumn: Fato_Municipio.Estado
+	toColumn: DIM_estado.Estado
+
+relationship AutoDetected_738a5fbf-fc41-4ed2-b161-92ed04adfeae
+	fromColumn: Fato_Municipio.Faixa_IDH
+	toColumn: DIM_Faixa_IDH.Faixa_IDH
+
+relationship AutoDetected_fdd6b52b-d7cd-4d6e-ab54-b7f6888f5074
+	fromColumn: Fato_Municipio.Faixa_Porte
+	toColumn: DIM_Porte_Populacional.Faixa_Porte
+
