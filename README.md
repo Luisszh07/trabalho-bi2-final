@@ -51,10 +51,10 @@ Os municípios brasileiros com menor IDH e menor capacidade de arrecadação pr�
 
 ## Como abrir o projeto
 
-1. Clone o repositório: `git clone <url-do-repo>`
+1. Clone o repositório: `git clone https://github.com/Luisszh07/trabalho-bi2-final`
 2. Baixe o arquivo `BRAZIL_CITIES.csv` em: https://www.kaggle.com/datasets/crisparada/brazilian-cities
 3. Coloque o CSV na pasta `data/`
-4. Abra o Power BI Desktop e acesse `pbip/brazilian-cities-bi.pbip`
+4. Abra o Power BI Desktop e acesse `pbip/tranlho bi2 final.pbip`
 5. Ao abrir, atualize a fonte de dados apontando para o CSV em `data/`
 
 ## Modelo Dimensional
