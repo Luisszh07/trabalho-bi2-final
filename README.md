@@ -1,6 +1,6 @@
 # Brazilian Cities BI — Análise de Gastos Públicos e Desenvolvimento Municipal
 
-Projeto de Business Intelligence desenvolvido para a disciplina de Banco de Dados / Modelagem Dimensional — CEUB.
+Projeto de Business Intelligence desenvolvido para a disciplina de Bussines inteligence II — CEUB.
 
 ## Autores
 
